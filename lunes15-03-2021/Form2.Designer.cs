@@ -130,7 +130,7 @@ namespace lunes15_03_2021
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 17);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Coutas";
+            this.label7.Text = "Cuotas";
             // 
             // textBox1
             // 
@@ -207,7 +207,7 @@ namespace lunes15_03_2021
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(111, 32);
             this.label8.TabIndex = 16;
-            this.label8.Text = "Coutas";
+            this.label8.Text = "Cuotas";
             // 
             // label9
             // 

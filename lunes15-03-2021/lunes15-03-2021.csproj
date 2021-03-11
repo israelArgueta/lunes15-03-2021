@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Casas.cs" />
+    <Compile Include="coutas.cs" />
     <Compile Include="Cpropiedades.cs" />
     <Compile Include="dueños.cs" />
     <Compile Include="Form1.cs">

@@ -23,7 +23,7 @@ namespace lunes15_03_2021
         void leerDueños()
         {
             OpenFileDialog op = new OpenFileDialog();
-            string fileName = "propietarios.txt";
+            string fileName = "Dueños.txt";
             FileStream stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             StreamReader reader = new StreamReader(stream);
             while (reader.Peek() > -1)
@@ -85,39 +85,13 @@ namespace lunes15_03_2021
             {
                 MessageBox.Show("Porfavor introduzca el Número de DPI");
             }
-            if (!string.IsNullOrEmpty(textBox1.Text))
-            {
-                leerDueños();
-                Form2 f2 = new Form2();
-                dueños p = new dueños();
-                p.Id = textBox1.Text;
-                replayPr();
-                if (hallardu)
-                {
-                    f2.dpi = textBox1.Text;
-                    f2.name = du[Du].Noms;
-                    f2.surname = du[Du].Ape;
-                    textBox1.Clear();
-                    hallardu = false;
-                   Du = 0;
-                }
-                else
-                {
-                    f2.dpi = textBox1.Text;
-                    f2.textBox2.Enabled = true;
-                    f2.textBox2.Focus();
-                    f2.textBox3.Enabled = true;
-                    textBox1.Clear();
-                    Du = 0;
-                }
-                f2.Show();
-                f2.button1.Enabled = true;
-            }
-            else
-            {
-                MessageBox.Show("Porfavor introduzca el Número de DPI");
-            }
+           
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            leerDueños();
         }
     }
 }

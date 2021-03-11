@@ -39,7 +39,7 @@ namespace lunes15_03_2021
         }
         void escDueños()
         {
-            FileStream stream = new FileStream("propietarios.txt", FileMode.OpenOrCreate, FileAccess.Write);
+            FileStream stream = new FileStream("Dueños.txt", FileMode.OpenOrCreate, FileAccess.Write);
             StreamWriter write = new StreamWriter(stream);
             foreach (var p in du)
             {
@@ -52,7 +52,7 @@ namespace lunes15_03_2021
         void analizarDueños()
         {
             OpenFileDialog op = new OpenFileDialog();
-            string fileName = "propietarios.txt";
+            string fileName = "Dueños.txt";
             FileStream stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             StreamReader reader = new StreamReader(stream);
             while (reader.Peek() > -1)
@@ -67,7 +67,7 @@ namespace lunes15_03_2021
         }
         void escCasas()
         {
-            FileStream stream = new FileStream("propiedades.txt", FileMode.OpenOrCreate, FileAccess.Write);
+            FileStream stream = new FileStream("Casas.txt", FileMode.OpenOrCreate, FileAccess.Write);
             StreamWriter write = new StreamWriter(stream);
             foreach (var p in casa)
             {
@@ -80,7 +80,7 @@ namespace lunes15_03_2021
         void leerCasas()
         {
             OpenFileDialog op = new OpenFileDialog();
-            string fileName = "propiedades.txt";
+            string fileName = "Casas.txt";
             FileStream stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             StreamReader read = new StreamReader(stream);
             while (read.Peek() > -1)
@@ -95,7 +95,7 @@ namespace lunes15_03_2021
         }
         void escUs()
         {
-            FileStream stream = new FileStream("usp.txt", FileMode.OpenOrCreate, FileAccess.Write);
+            FileStream stream = new FileStream("usuarios.txt", FileMode.OpenOrCreate, FileAccess.Write);
             StreamWriter write = new StreamWriter(stream);
             foreach (var u in us)
             {
@@ -109,7 +109,7 @@ namespace lunes15_03_2021
         void leerUs()
         {
             OpenFileDialog op = new OpenFileDialog();
-            string fileName = "usp.txt";
+            string fileName = "usuarios.txt";
             FileStream stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             StreamReader reader = new StreamReader(stream);
             while (reader.Peek() > -1)
@@ -187,7 +187,7 @@ namespace lunes15_03_2021
         }
         void escribirCantidad()
         {
-            FileStream stream = new FileStream("cantidad.txt", FileMode.OpenOrCreate, FileAccess.Write);
+            FileStream stream = new FileStream("Precio.txt", FileMode.OpenOrCreate, FileAccess.Write);
             StreamWriter write = new StreamWriter(stream);
             foreach (var c in cp)
             {
@@ -200,7 +200,7 @@ namespace lunes15_03_2021
         void leerCantidad()
         {
             OpenFileDialog op = new OpenFileDialog();
-            string fileName = "cantidad.txt";
+            string fileName = "Precio.txt";
             FileStream stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             StreamReader read = new StreamReader(stream);
             while (read.Peek() > -1)
@@ -215,7 +215,7 @@ namespace lunes15_03_2021
         }
         void escribirMayor()
         {
-            FileStream stream = new FileStream("mayor.txt", FileMode.OpenOrCreate, FileAccess.Write);
+            FileStream stream = new FileStream("cuotas.txt", FileMode.OpenOrCreate, FileAccess.Write);
             StreamWriter write = new StreamWriter(stream);
             foreach (var m in may)
             {
@@ -229,7 +229,7 @@ namespace lunes15_03_2021
         void leerMayor()
         {
             OpenFileDialog op = new OpenFileDialog();
-            string fileName = "mayor.txt";
+            string fileName = "cuotas.txt";
             FileStream stream = new FileStream(fileName, FileMode.Open, FileAccess.Read);
             StreamReader read = new StreamReader(stream);
             while (read.Peek() > -1)
@@ -325,7 +325,7 @@ namespace lunes15_03_2021
             {
                 label12.Text.Remove(0);
                 may = may.OrderByDescending(m => m.Man).ToList();
-                label12.Text = may[0].Perso + " " + may[0].Ap + " es el propietario con la cuota de mantenimiento más alta con " +
+                label12.Text = may[0].Perso + " " + may[0].Ap + "" +
                     may[0].Man;
             }
 

@@ -94,5 +94,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Casas.txt" />
+    <Content Include="cuotas.txt" />
+    <Content Include="Dueños.txt" />
+    <Content Include="Precio.txt" />
+    <Content Include="usuarios.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

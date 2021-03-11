@@ -52,6 +52,8 @@ namespace lunes15_03_2021
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -175,6 +177,7 @@ namespace lunes15_03_2021
             this.button1.TabIndex = 13;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -184,6 +187,7 @@ namespace lunes15_03_2021
             this.button2.TabIndex = 14;
             this.button2.Text = "Guardad";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -193,6 +197,7 @@ namespace lunes15_03_2021
             this.button3.TabIndex = 15;
             this.button3.Text = "Ordenar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label8
             // 
@@ -259,11 +264,30 @@ namespace lunes15_03_2021
             this.label12.TabIndex = 22;
             this.label12.Text = "label12";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(959, 17);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(184, 17);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "el dueño con mas casas es:";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Enabled = false;
+            this.textBox6.Location = new System.Drawing.Point(949, 58);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(215, 22);
+            this.textBox6.TabIndex = 24;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1190, 691);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.listBox2);
@@ -321,5 +345,7 @@ namespace lunes15_03_2021
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }
